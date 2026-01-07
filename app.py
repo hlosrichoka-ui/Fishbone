@@ -32,7 +32,7 @@ if not OPENAI_API_KEY:
     st.error("❌ OPENAI_API_KEY not found. Please set it in Environment Variables or Streamlit Secrets.")
     st.stop()
 
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")  # ใช้รุ่นใหม่
+MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")  # ใช้รุ่นใหม่
 
 API_URL = "https://api.openai.com/v1/responses"
 
@@ -220,3 +220,4 @@ if st.button("🧠 Analyze OOS with AI"):
 
 st.markdown("---")
 st.caption("Designed for GMP / QC environments | Responses API (current OpenAI standard)")
+
